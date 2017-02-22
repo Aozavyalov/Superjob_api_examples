@@ -2,3 +2,6 @@
 /api_key.txt
 /100_vacancies.txt
 /__pycache__/*
+/100_vacancies.json
+/edited_100_vacancies
+/edited_100_vacancies.json

@@ -29,7 +29,7 @@ def get_api_key_from_file(path_to_read_file):
         with open(path_to_read_file, 'r') as f:
             my_api_key = f.read()
     except FileNotFoundError:
-        print()
+        print('There is no such file!')
     return {'X-Api-App-Id': my_api_key}
 
 

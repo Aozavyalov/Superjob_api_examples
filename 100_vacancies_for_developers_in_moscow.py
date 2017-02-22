@@ -15,8 +15,8 @@ if __name__ == '__main__':
     auth_data = get_data_from_superjob.get_api_key_from_file('api_key.txt')
     params = {'town': 'Москва', 'keywords': ['программист', 'разработчик'],
               'catalogues': [56, 52, 51, 48, 47, 604, 42, 41, 40, 546, 503, 37, 36], 'count': 100}
-    path_to_file_with_vacancies = '100_vacancies.txt'
+    path_to_file_with_vacancies = '100_vacancies.json'
     # testing of vacancies
-    vacancies = get_vacancies(params, auth_data)['objects']
+    vacancies = get_vacancies(params, auth_data, path_to_file_with_vacancies)['objects']
     for vacancy in vacancies:
         print(vacancy['profession'], vacancy['town']['title'], sep='\t')
